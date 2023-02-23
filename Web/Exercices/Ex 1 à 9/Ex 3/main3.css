@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "American";
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+body{
+    background-color: grey;
+}
+
+@font-face {
+    font-family: "American";
+    src: url("../font/AmericanCaptain-MdEY.otf");
+}
+
+ul {
+    list-style: none;
+    background: #22438c;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding:  20px 60px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: #22438c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background: #112C66;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
