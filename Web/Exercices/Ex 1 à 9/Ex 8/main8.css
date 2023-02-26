@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "American";
+    letter-spacing: 2px;
+}
+
+@font-face {
+    font-family: "American" ;
+    src: url("../font/AmericanCaptain-MdEY.otf");
+}
+
+body{
+    background: #24262a;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background:white;
+    width: 500px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image{
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.rank {
+    background-image: url('../img/rank.jpg');
+}
+
+.unrank{
+    background-image: url('../img/unrank.jpg');
+}
+
+.casu {
+    background-image: url('../img/casual.jpg');
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.n1:hover, .n3:hover{
+    background-color: rgb(230, 134, 24);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+.n2:hover{
+    background-color: rgb(28, 61, 211);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+.n1:not(:hover), .n2:not(:hover), .n3:not(:hover) {
+    transition: all 1s ease;
+}

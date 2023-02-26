@@ -15,40 +15,92 @@ body{
     src: url("../font/AmericanCaptain-MdEY.otf");
 }
 
-ul {
-    list-style: none;
-    background: #22438c;
+.placement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ccc;
 }
 
-ul li {
+.dropdown {
     display: inline-block;
-    position: relative;
 }
 
-ul li a {
-    display: block;
-    padding:  20px 60px;
+.btn-dropdown {
+    background-color: #111;
     color: white;
-    text-decoration: none;
-    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    width: 19vh;
+    height: 5vh;
+    border-radius: 5px;
+    font-size: 1.5rem;
 }
-
-ul li ul.dropdown li {
-    display: block;
-}
-
-ul li ul.dropdown {
-    width: 100%;
-    background: #22438c;
-    position: absolute;
-    z-index: 999;
+  
+.menu {
     display: none;
 }
-
-ul li a:hover{
-    background: #112C66;
+  
+.btn-dropdown .menu {
+    display: block;
+}
+  
+.dropdown .btn-dropdown {
+    width: fit-content;
+    height: fit-content;
+}
+  
+.dropdown .menu {
+    background-color: #111;
+    width: fit-content;
+    height: fit-content;
+}
+  
+.dropdown .menu li {
+    display: block;
+    position: relative;
+}
+  
+.dropdown .menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    width: 19vh;
+    border: white solid 1px;
+}
+  
+.dropdown .menu li ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #111;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+  
+.dropdown .menu li ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+  
+.dropdown:hover .menu {
+    display: block;
 }
 
-ul li:hover ul.dropdown{
+.dropdown .menu li:hover ul {
     display: block;
+}
+  
+.dropdown .menu li a:hover {
+    background-color: #5246ff;
+}
+
+.dropdown .menu li ul li a:hover{
+    background-color: orange;
 }

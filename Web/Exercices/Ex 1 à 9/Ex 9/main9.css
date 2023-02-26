@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    width: 80%;
+    padding: 100px;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(0deg, orange, rgb(39, 39, 218));
+    border-radius: 15px;
+}
