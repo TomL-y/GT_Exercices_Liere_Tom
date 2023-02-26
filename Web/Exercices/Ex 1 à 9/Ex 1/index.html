@@ -8,19 +8,65 @@
     <title>Ex 1</title>
 </head>
 <body>
-    <header>
-        <div class="logo_nav">
-            <img class="img_logo" src="../img/logo.png" alt="">
+    <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+          <div class="logo">
+            <button class="btn-img"><img class="img-logo" src="../img/logo.png" alt=""></button>
         </div>
-        <div class="bouton">
-            <a class="btn btn1" href="#">info</a>
-            <a class="btn btn2" href="#">operateur</a>
-            <a class="btn btn3" href="#">map</a>
-            <a class="btn btn4" href="#">arme</a>
-        </div>
-    </header>
-    <div class="background">
-
-    </div>
+            <ul class="links">
+              <li><a id="link-1" href="#">Info</a></li>
+              <li><a id="link-2" href="#">Carte</a></li>
+              <li>
+                <a id="link-3" href="#" class="desktop-link">operateurs</a>
+                <input type="checkbox" id="show-operateurs">
+                <label for="show-operateurs">operateurs</label>
+                <ul>
+                  <li>
+                    <a href="#" class="desktop-link">Attaquants</a>
+                    <input type="checkbox" id="show-items">
+                    <label for="show-items">Attaquants</label>
+                    <ul>
+                      <li><a href="#">Pathfinders</a></li>
+                      <li><a href="#">Year 1</a></li>
+                      <li><a href="#">Year 2</a></li>
+                      <li><a href="#">Year 3</a></li>
+                      <li><a href="#">Year 4</a></li>
+                      <li><a href="#">Year 5</a></li>
+                      <li><a href="#">Year 6</a></li>
+                      <li><a href="#">Year 7</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Defenseurs</a>
+                    <input type="checkbox" id="show-items">
+                    <label for="show-items">Defenseurs</label>
+                    <ul>
+                      <li><a href="#">Pathfinders</a></li>
+                      <li><a href="#">Year 1</a></li>
+                      <li><a href="#">Year 2</a></li>
+                      <li><a href="#">Year 3</a></li>
+                      <li><a href="#">Year 4</a></li>
+                      <li><a href="#">Year 5</a></li>
+                      <li><a href="#">Year 6</a></li>
+                      <li><a href="#">Year 7</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a id="link-4" href="#">skin elite</a></li>
+            </ul>
+          </div>
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+        </nav>
+      </div>
+      <script src="main1.js"></script>
 </body>
 </html>
