@@ -1,0 +1,96 @@
+.vertical_navbar{
+    background-color: #24262a;
+    width: 14%;
+    height: 80vh;
+    border-radius: 0 80px 80px 0;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12vh;
+}
+
+.map{
+    color:white;
+    margin-top: 25%;
+}
+
+.carte, .carte1{
+    font-size: 187.5%;
+    letter-spacing: 4px;
+    margin-top: 5%;
+    text-decoration: none;
+    color: white;
+}
+
+.carte:hover{
+    color: orange;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.carte:not(:hover){
+    transition: all 0.5s ease;
+}
+
+.carte1:hover{
+    color: rgb(46, 46, 228);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.carte1:not(:hover){
+    transition: all 0.5s ease;
+}
+
+.bouton{
+    color: white;
+    text-decoration: none;
+}
+
+.background{
+    background-color: #000b28;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.maps{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+}
+
+.containerr{
+    width: 60%;
+    
+}
+
+.img{
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 33%;
+}
+
+.titre{
+    margin-top: 10%;
+    letter-spacing: 4px;
+    font-size: 50px;
+}
+
+.espace{
+    height: 10px;
+    background-color: #24262a;
+    width: 100%;
+}
+
+.pied {
+    height: 100px;
+    background-color: #000b28;
+    width: 100%;
+}

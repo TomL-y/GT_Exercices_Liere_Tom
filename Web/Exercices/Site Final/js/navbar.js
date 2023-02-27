@@ -7,22 +7,25 @@ function verifierMedia() {
     const lien2 = document.getElementById('link-2');
     const lien3 = document.getElementById('link-3');
     const lien4 = document.getElementById('link-4');
+    const lien5 = document.getElementById('link-5');
     const btn = document.querySelector('.btn-img');
     if (!alreadyReloaded) {
       alreadyReloaded = true;
       btn.addEventListener("click", function(){
         if (wrap.style.height == "70px"){
           wrap.style.height = "80vh";
-          lien1.style.opacity = "1";
-          lien2.style.opacity = "1";
-          lien3.style.opacity = "1";
-          lien4.style.opacity = "1";
+          lien1.style.display = "block";
+          lien2.style.display = "block";
+          lien3.style.display = "block";
+          lien4.style.display = "block";
+          lien5.style.display = "block";
         } else {
           wrap.style.height = "70px";
-          lien1.style.opacity = "0";
-          lien2.style.opacity = "0";
-          lien3.style.opacity = "0";
-          lien4.style.opacity = "0";
+          lien1.style.display = "none";
+          lien2.style.display = "none";
+          lien3.style.display = "none";
+          lien4.style.display = "none";
+          lien5.style.display = "none";
         }
       })
     }

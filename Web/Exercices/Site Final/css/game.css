@@ -1,0 +1,86 @@
+.espace{
+    height: 150px;
+    background-color: #24262a;
+    width: 100%;
+}
+
+h2{
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.background-6{
+    width: 100%;
+    background-color: #24262a;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background:white;
+    width: 500px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image{
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.rank {
+    background-image: url('../src/img/rank.jpg');
+}
+
+.unrank{
+    background-image: url('../src/img/unrank.jpg');
+}
+
+.casu {
+    background-image: url('../src/img/casual.jpg');
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.n1:hover, .n3:hover{
+    background-color: rgb(230, 134, 24);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+.n2:hover{
+    background-color: rgb(28, 61, 211);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+.n1:not(:hover), .n2:not(:hover), .n3:not(:hover) {
+    transition: all 1s ease;
+}

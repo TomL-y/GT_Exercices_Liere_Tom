@@ -1,7 +1,7 @@
 
 .background{
     height: 100vh;
-    background-color: #24262a;
+    background-color: #000b28;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -32,7 +32,7 @@ h1{
     width: 1000%;
     position: relative;
     float: left;
-    animation: slider 100s infinite;
+    animation: slider 25s infinite;
 }
 
 .slide{
@@ -44,34 +44,25 @@ h1{
     0%{
         left:0%;
     }
-    10%{
+    20%{
        left:-100%;
     }
-    20%{
+    40%{
         left:-200%;
     }
-    30%{
+    60%{
         left:-300%;
     }
-    40%{
-        left:-400%;
-    }
-    50%{
-        left:-500%;
-    }
-    60%{
-        left:-600%;
-    }
-    70%{
-        left:-700%;
-    }
     80%{
-        left:-800%;
-    }
-    90%{
-        left:-900%;
+        left:-400%;
     }
     100%{
         left:0%;
     }
+}
+
+.espace{
+    height: 70px;
+    background-color: #24262a;
+    width: 100%;
 }

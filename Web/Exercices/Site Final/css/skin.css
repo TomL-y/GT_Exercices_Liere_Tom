@@ -1,0 +1,128 @@
+a:hover {
+    color : white ;
+}
+
+.background-9 {
+    background-color : #000b28 ;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index : 1 ;
+}
+
+.title{
+    font-size: 50px;
+    color: white;
+    padding-top: 8%;
+    text-transform: uppercase;
+    text-align: center;
+}
+#carrousel{
+    width: 800px;
+    height: 400px;
+    border:solid 4px #fff;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.carre{
+    padding-top: 8%;
+    height: auto;
+}
+
+.o-container {
+    width: 800px;
+    height: 400px;
+}
+
+.bouton{
+    position:absolute;
+    width: 9%;
+    cursor: pointer;
+    top: 40%;
+}
+
+.image {
+    width: 800px;
+    height: 400px;
+    display: inline-block;
+    background-size: cover;
+}
+
+@media screen and (max-width:1200px) {
+    .image {
+        width: 600px;
+        height: 300px;
+    }
+    #carrousel{
+        width: 600px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .image {
+        width: 400px;
+        height: 200px;
+    }
+    #carrousel{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+#a{
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    filter: invert(100%);
+    transition: all 0.3s ease;
+}
+#b{
+    right: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    filter: invert(100%);
+    transition: all 0.3s ease;
+}
+#c{
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    filter: invert(100%);
+    transition: all 0.3s ease;
+}
+#d{
+    right: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    filter: invert(100%);
+    transition: all 0.3s ease;
+}
+
+#a:hover{
+    transform:rotate(180deg) scale(1.1);
+    opacity: 1;
+}
+#b:hover{
+    transform:rotate(0deg) scale(1.1);
+    opacity: 1;
+}
+#c:hover{
+    transform:rotate(180deg) scale(1.1);
+    opacity: 1;
+}
+#d:hover{
+    transform:rotate(0deg) scale(1.1);
+    opacity: 1;
+}
+
+.espace{
+    height: 70px;
+    background-color: #000b28;
+    width: 100%;
+}
